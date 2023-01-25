@@ -15,14 +15,20 @@
         <div>
             <h1>Arithmetic Calculator</h1>
         </div>
-        <form method="post" action="age">
+        <form method="post" action="arithmetic">
             <div>            
-                Enter your age: <input type="text" name="age" value="${age}"><br>
-                <input type="submit" value="Age next birthday">
+                First <input type="text" name="first" value="${first}"><br>
+                Second <input type="text" name="second" value="${second}"><br>
+                <!-- operators buttons -->
+                <input type="submit" name="operation" value="+">
+                <input type="submit" name="operation" value="-">
+                <input type="submit" name="operation" value="*">
+                <input type="submit" name="operation" value="%">
+                <br>
             </div>
         </form>
         <div>
-            ${message}
+            Result: ${result}
         </div>
         <div>
             <a href="age">Age Calculator</a>

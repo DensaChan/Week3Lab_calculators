@@ -1,13 +1,16 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ *
+ * @author Densa
+ */
 @WebServlet(name = "AgeCalculatorServlet", urlPatterns = {"/age"})
 public class AgeCalculatorServlet extends HttpServlet {
 
@@ -27,7 +30,7 @@ public class AgeCalculatorServlet extends HttpServlet {
         //set attributes from request
         request.setAttribute("age", age);
         
-        // validation - Error Handling
+        // validation - Validates inputs and returns to JSP
         if ((age == null) || age.equals("")) {
                 request.setAttribute("message", "You must give your current age");
             } 
