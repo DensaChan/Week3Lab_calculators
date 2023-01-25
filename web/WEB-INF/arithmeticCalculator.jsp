@@ -27,6 +27,7 @@
                 <br>
             </div>
         </form>
+        <br>
         <div>
             Result: ${result}
         </div>
