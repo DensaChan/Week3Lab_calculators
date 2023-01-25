@@ -1,6 +1,6 @@
 <%-- 
-    Document   : ageCalculator
-    Created on : 24-Jan-2023, 6:41:07 PM
+    Document   : arithmeticCalculator
+    Created on : 24-Jan-2023, 8:05:12 PM
     Author     : Densa
 --%>
 
@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Age Calculator</title>
+        <title>Arithmetic Calculator</title>
     </head>
     <body>
         <div>
-            <h1>Age Calculator</h1>
+            <h1>Arithmetic Calculator</h1>
         </div>
         <form method="post" action="age">
             <div>            
@@ -25,8 +25,7 @@
             ${message}
         </div>
         <div>
-            <a href="arithmetic">Arithmetic Calculator</a>
+            <a href="age">Age Calculator</a>
         </div>
     </body>
 </html>
-
